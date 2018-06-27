@@ -1,3 +1,0 @@
-D:/github/wolfram-librarylink-examples/HelloWorld/build/CMakeFiles/HelloWorld.dir
-D:/github/wolfram-librarylink-examples/HelloWorld/build/CMakeFiles/ALL_BUILD.dir
-D:/github/wolfram-librarylink-examples/HelloWorld/build/CMakeFiles/ZERO_CHECK.dir
