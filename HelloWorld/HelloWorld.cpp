@@ -7,7 +7,7 @@ EXTERN_C DLLEXPORT void WolframLibrary_uninitialize( WolframLibraryData libData)
 */
 
 EXTERN_C DLLEXPORT int HelloWorld(WolframLibraryData libData, mint Argc, MArgument *Args, MArgument Res) {
-	char hello[] = "Hello World";
-	MArgument_setUTF8String(Res,hello);
+	const char* hello = "Hello World";
+	MArgument_setUTF8String(Res, (char*)hello);
 	return LIBRARY_NO_ERROR;
 }
