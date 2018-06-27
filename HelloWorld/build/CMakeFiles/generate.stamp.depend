@@ -1,0 +1,25 @@
+# CMake generation dependency list for this directory.
+D:/github/wolfram-librarylink-examples/HelloWorld/CMakeLists.txt
+D:/github/wolfram-librarylink-examples/HelloWorld/build/CMakeFiles/3.11.4/CMakeSystem.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CMakeSystemSpecificInitialize.cmake
+D:/github/wolfram-librarylink-examples/HelloWorld/build/CMakeFiles/3.11.4/CMakeCCompiler.cmake
+D:/github/wolfram-librarylink-examples/HelloWorld/build/CMakeFiles/3.11.4/CMakeCXXCompiler.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/Platform/Windows-MSVC.cmake
+D:/github/wolfram-librarylink-examples/HelloWorld/build/CMakeFiles/3.11.4/CMakeRCCompiler.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CMakeCommonLanguageInclude.cmake

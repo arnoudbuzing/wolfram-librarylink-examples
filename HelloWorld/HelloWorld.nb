@@ -1,0 +1,182 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6751,        174]
+NotebookOptionsPosition[      5085,        138]
+NotebookOutlinePosition[      5429,        153]
+CellTagsIndexPosition[      5386,        150]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Hello World", "Title",
+ CellChangeTimes->{{3.73910608245113*^9, 3.739106084891464*^9}, {
+  3.739107719654417*^9, 
+  3.7391077233423896`*^9}},ExpressionUUID->"1297967f-cb5a-4edf-9d0c-\
+e27dd8a50146"],
+
+Cell[CellGroupData[{
+
+Cell["\[OpenCurlyDoubleQuote]Hello World\[CloseCurlyDoubleQuote] example", \
+"Subsection",
+ CellChangeTimes->{{3.739106088290642*^9, 3.7391061006030483`*^9}, {
+  3.7391077337512264`*^9, 
+  3.739107741414942*^9}},ExpressionUUID->"72c31e7f-e6ef-47f9-a752-\
+836b10910175"],
+
+Cell["Find the library:", "Text",
+ CellChangeTimes->{{3.7391061370592537`*^9, 
+  3.739106148506667*^9}},ExpressionUUID->"c510ce96-e2d9-423d-b2ed-\
+552735483f57"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"library", "=", 
+  RowBox[{"FileNameJoin", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"NotebookDirectory", "[", "]"}], ",", "\"\<build\>\"", ",", 
+     "\"\<Debug\>\"", ",", "\"\<HelloWorld\>\""}], "}"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.739105894797891*^9, 3.739105935253393*^9}, {
+  3.7391059796056757`*^9, 3.739105997196041*^9}, {3.7391077273200736`*^9, 
+  3.739107729104781*^9}},
+ CellLabel->"In[18]:=",ExpressionUUID->"8aa2e240-abfa-44b5-894b-46319c343446"],
+
+Cell[BoxData["\<\"D:\\\\github\\\\wolfram-librarylink-examples\\\\HelloWorld\\\
+\\build\\\\Debug\\\\HelloWorld\"\>"], "Output",
+ CellChangeTimes->{
+  3.7391058973058558`*^9, 3.7391059359695897`*^9, {3.7391059803083477`*^9, 
+   3.739106001304367*^9}, 3.73910606979216*^9, 3.739107892266984*^9, 
+   3.7391079875875406`*^9, 3.7391080771686153`*^9},
+ CellLabel->"Out[18]=",ExpressionUUID->"37ab72c0-325f-42e5-851a-90ffc1eedbad"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FileType", "[", "library", "]"}]], "Input",
+ CellChangeTimes->{{3.739108089840024*^9, 3.7391080955667367`*^9}},
+ CellLabel->"In[21]:=",ExpressionUUID->"b5ebe6f2-cfeb-4bb2-8abb-4b3f3025b806"],
+
+Cell[BoxData["None"], "Output",
+ CellChangeTimes->{{3.739108092604154*^9, 3.7391080958574777`*^9}},
+ CellLabel->"Out[21]=",ExpressionUUID->"61529637-6bd9-4f4e-a683-29c81c495860"]
+}, Open  ]],
+
+Cell["Load the library:", "Text",
+ CellChangeTimes->{{3.7391061443316727`*^9, 
+  3.7391061463706226`*^9}},ExpressionUUID->"efac2de3-09b8-4860-b07a-\
+129a8fab3591"],
+
+Cell[BoxData["LoadLibrary"], "Input",
+ CellChangeTimes->{{3.739107901016588*^9, 
+  3.739107903014489*^9}},ExpressionUUID->"a543ce73-b576-4d1e-85a1-\
+e0537659e3fd"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"HelloWorld", "=", 
+  RowBox[{"LibraryFunctionLoad", "[", 
+   RowBox[{"library", ",", "\"\<HelloWorld\>\"", ",", 
+    RowBox[{"{", "}"}], ",", "\"\<UTF8String\>\""}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.739105848717472*^9, 3.739105890216504*^9}, {
+  3.7391059455571985`*^9, 3.7391059680762825`*^9}, {3.739107744320021*^9, 
+  3.739107750657236*^9}, {3.739107950320916*^9, 3.739107953759204*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"62a67b0b-d18f-44ae-9b33-57e569a713df"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "LibraryFunction","libload",
+   "\"The function \\!\\(\\*RowBox[{\\\"\\\\\\\"HelloWorld\\\\\\\"\\\"}]\\) \
+was not loaded from the file \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"D:\\\\\\\\\\\\\\\\github\\\\\\\\\\\\\\\\wolfram-\
+librarylink-examples\\\\\\\\\\\\\\\\HelloWorld\\\\\\\\\\\\\\\\build\\\\\\\\\\\
+\\\\\\Debug\\\\\\\\\\\\\\\\HelloWorld.dll\\\\\\\"\\\"}]\\).\"",2,19,8,
+   20309184845743101018,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7391078947516317`*^9, 3.7391079546360464`*^9, 
+  3.7391079894449444`*^9, 3.7391080784977217`*^9},
+ CellLabel->
+  "During evaluation of \
+In[19]:=",ExpressionUUID->"420a56e9-426a-4e30-a01a-7b62326757f9"],
+
+Cell[BoxData["$Failed"], "Output",
+ CellChangeTimes->{{3.739105969171603*^9, 3.7391060021967382`*^9}, 
+   3.7391060711697397`*^9, 3.7391078947548018`*^9, 3.739107954660065*^9, 
+   3.7391079894669657`*^9, 3.739108078519744*^9},
+ CellLabel->"Out[19]=",ExpressionUUID->"eb270c9c-9121-40af-850e-9daf3233dc97"]
+}, Open  ]],
+
+Cell["The function takes no arguments and returns \
+\[OpenCurlyDoubleQuote]Hello World\[CloseCurlyDoubleQuote]:", "Text",
+ CellChangeTimes->{{3.7391061174030013`*^9, 3.739106152995204*^9}, {
+  3.7391077584797153`*^9, 
+  3.739107761551409*^9}},ExpressionUUID->"c4e46aae-b9da-4740-b3d4-\
+d971b591423b"],
+
+Cell[BoxData[
+ RowBox[{"HelloWorld", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.7391060727245517`*^9, 3.739106076195772*^9}, {
+  3.7391077531115847`*^9, 
+  3.739107755206549*^9}},ExpressionUUID->"2aee44e5-bd74-4776-b632-\
+90871e9fb040"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{759, 833},
+WindowMargins->{{Automatic, -857}, {63, Automatic}},
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 204, 4, 96, "Title",ExpressionUUID->"1297967f-cb5a-4edf-9d0c-e27dd8a50146"],
+Cell[CellGroupData[{
+Cell[809, 30, 269, 5, 53, "Subsection",ExpressionUUID->"72c31e7f-e6ef-47f9-a752-836b10910175"],
+Cell[1081, 37, 161, 3, 34, "Text",ExpressionUUID->"c510ce96-e2d9-423d-b2ed-552735483f57"],
+Cell[CellGroupData[{
+Cell[1267, 44, 499, 10, 28, "Input",ExpressionUUID->"8aa2e240-abfa-44b5-894b-46319c343446"],
+Cell[1769, 56, 424, 6, 32, "Output",ExpressionUUID->"37ab72c0-325f-42e5-851a-90ffc1eedbad"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2230, 67, 214, 3, 28, "Input",ExpressionUUID->"b5ebe6f2-cfeb-4bb2-8abb-4b3f3025b806"],
+Cell[2447, 72, 178, 2, 32, "Output",ExpressionUUID->"61529637-6bd9-4f4e-a683-29c81c495860"]
+}, Open  ]],
+Cell[2640, 77, 163, 3, 34, "Text",ExpressionUUID->"efac2de3-09b8-4860-b07a-129a8fab3591"],
+Cell[2806, 82, 163, 3, 28, "Input",ExpressionUUID->"a543ce73-b576-4d1e-85a1-e0537659e3fd"],
+Cell[CellGroupData[{
+Cell[2994, 89, 501, 8, 28, "Input",ExpressionUUID->"62a67b0b-d18f-44ae-9b33-57e569a713df"],
+Cell[3498, 99, 696, 14, 39, "Message",ExpressionUUID->"420a56e9-426a-4e30-a01a-7b62326757f9"],
+Cell[4197, 115, 305, 4, 32, "Output",ExpressionUUID->"eb270c9c-9121-40af-850e-9daf3233dc97"]
+}, Open  ]],
+Cell[4517, 122, 300, 5, 34, "Text",ExpressionUUID->"c4e46aae-b9da-4740-b3d4-d971b591423b"],
+Cell[4820, 129, 237, 5, 28, "Input",ExpressionUUID->"2aee44e5-bd74-4776-b632-90871e9fb040"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
