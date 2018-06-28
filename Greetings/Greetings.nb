@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     17959,        381]
-NotebookOptionsPosition[     16472,        347]
-NotebookOutlinePosition[     16815,        362]
-CellTagsIndexPosition[     16772,        359]
+NotebookDataLength[     18925,        405]
+NotebookOptionsPosition[     17213,        367]
+NotebookOutlinePosition[     17556,        382]
+CellTagsIndexPosition[     17513,        379]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -337,11 +337,31 @@ Cell[BoxData["\<\"Greetings Maria!\"\>"], "Output",
  CellLabel->"Out[4]=",ExpressionUUID->"97c9a396-e3e9-42e8-851e-82e1f0382d1f"]
 }, Open  ]],
 
+Cell[CellGroupData[{
+
 Cell[BoxData[
  RowBox[{"LibraryUnload", "[", "library", "]"}]], "Input",
  CellChangeTimes->{{3.7391141311170673`*^9, 3.7391141314867754`*^9}, {
   3.739124481226705*^9, 3.73912448481145*^9}},
- CellLabel->"In[5]:=",ExpressionUUID->"0cbef679-32cb-456a-86b2-35681f535dc5"]
+ CellLabel->"In[6]:=",ExpressionUUID->"0cbef679-32cb-456a-86b2-35681f535dc5"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "LibraryFunction","unloadlib",
+   "\"The library \\!\\(\\*RowBox[{\\\"\\\\\\\"D:\\\\\\\\\\\\\\\\github\\\\\\\
+\\\\\\\\\\wolfram-librarylink-examples\\\\\\\\\\\\\\\\Greetings\\\\\\\\\\\\\\\
+\\build\\\\\\\\\\\\\\\\Debug\\\\\\\\\\\\\\\\Greetings.dll\\\\\\\"\\\"}]\\) \
+cannot be unloaded.\"",2,6,2,20309686595474385600,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7391832871525617`*^9},
+ CellLabel->
+  "During evaluation of \
+In[6]:=",ExpressionUUID->"275d33be-1f30-4466-9368-44a8d386581d"],
+
+Cell[BoxData["$Failed"], "Output",
+ CellChangeTimes->{3.7391832871545634`*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"a466b4c0-643d-4066-831f-31b22a60f6ed"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
@@ -380,7 +400,11 @@ Cell[CellGroupData[{
 Cell[15712, 328, 273, 4, 28, "Input",ExpressionUUID->"2aee44e5-bd74-4776-b632-90871e9fb040"],
 Cell[15988, 334, 173, 2, 32, "Output",ExpressionUUID->"97c9a396-e3e9-42e8-851e-82e1f0382d1f"]
 }, Open  ]],
-Cell[16176, 339, 268, 4, 28, "Input",ExpressionUUID->"0cbef679-32cb-456a-86b2-35681f535dc5"]
+Cell[CellGroupData[{
+Cell[16198, 341, 268, 4, 28, "Input",ExpressionUUID->"0cbef679-32cb-456a-86b2-35681f535dc5"],
+Cell[16469, 347, 545, 11, 39, "Message",ExpressionUUID->"275d33be-1f30-4466-9368-44a8d386581d"],
+Cell[17017, 360, 156, 2, 32, "Output",ExpressionUUID->"a466b4c0-643d-4066-831f-31b22a60f6ed"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }
