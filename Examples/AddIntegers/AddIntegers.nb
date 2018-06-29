@@ -10,27 +10,30 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     18478,        391]
-NotebookOptionsPosition[     16991,        357]
-NotebookOutlinePosition[     17334,        372]
-CellTagsIndexPosition[     17291,        369]
+NotebookDataLength[     19908,        411]
+NotebookOptionsPosition[     18327,        376]
+NotebookOutlinePosition[     18670,        391]
+CellTagsIndexPosition[     18627,        388]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
-Cell["Greetings", "Title",
- CellChangeTimes->{{3.73910608245113*^9, 3.739106084891464*^9}, 
-   3.7391165279603405`*^9, {3.7391824147862267`*^9, 
-   3.7391824160824747`*^9}},ExpressionUUID->"1297967f-cb5a-4edf-9d0c-\
+Cell["AddIntegers", "Title",
+ CellChangeTimes->{{3.73910608245113*^9, 3.739106084891464*^9}, {
+  3.739107719654417*^9, 3.7391077233423896`*^9}, {3.7392704180480294`*^9, 
+  3.7392704210313153`*^9}, {3.739273046883755*^9, 
+  3.739273049051694*^9}},ExpressionUUID->"1297967f-cb5a-4edf-9d0c-\
 e27dd8a50146"],
 
 Cell[CellGroupData[{
 
-Cell["Minimal Example", "Subsection",
- CellChangeTimes->{{3.739106088290642*^9, 
-  3.7391061006030483`*^9}},ExpressionUUID->"72c31e7f-e6ef-47f9-a752-\
+Cell["Adding integers example", "Subsection",
+ CellChangeTimes->{{3.739106088290642*^9, 3.7391061006030483`*^9}, {
+  3.7391077337512264`*^9, 3.739107741414942*^9}, {3.7392704237272415`*^9, 
+  3.7392704266230116`*^9}, {3.739273051836359*^9, 
+  3.739273054212348*^9}},ExpressionUUID->"72c31e7f-e6ef-47f9-a752-\
 836b10910175"],
 
 Cell["Find the library:", "Text",
@@ -46,21 +49,25 @@ Cell[BoxData[
    RowBox[{"{", 
     RowBox[{
      RowBox[{"NotebookDirectory", "[", "]"}], ",", "\"\<build\>\"", ",", 
-     "\"\<Debug\>\"", ",", "\"\<Greetings\>\""}], "}"}], "]"}]}]], "Input",
+     "\"\<Debug\>\"", ",", "\"\<AddIntegers.dll\>\""}], "}"}], 
+   "]"}]}]], "Input",
  CellChangeTimes->{{3.739105894797891*^9, 3.739105935253393*^9}, {
-  3.7391059796056757`*^9, 3.739105997196041*^9}, {3.7391824209071283`*^9, 
-  3.739182422595746*^9}},
+  3.7391059796056757`*^9, 3.739105997196041*^9}, {3.7391077273200736`*^9, 
+  3.739107729104781*^9}, {3.739108134248423*^9, 3.739108134687853*^9}, {
+  3.7392704315527277`*^9, 3.7392704329680805`*^9}, {3.739273056837859*^9, 
+  3.739273058253046*^9}},
  CellLabel->"In[1]:=",ExpressionUUID->"8aa2e240-abfa-44b5-894b-46319c343446"],
 
 Cell[BoxData["\<\"D:\\\\github\\\\wolfram-librarylink-examples\\\\Examples\\\\\
-Greetings\\\\build\\\\Debug\\\\Greetings\"\>"], "Output",
+AddIntegers\\\\build\\\\Debug\\\\AddIntegers.dll\"\>"], "Output",
  CellChangeTimes->{
   3.7391058973058558`*^9, 3.7391059359695897`*^9, {3.7391059803083477`*^9, 
-   3.739106001304367*^9}, 3.73910606979216*^9, 3.739124474537114*^9, 
-   3.7391824235366526`*^9, 3.739197587926983*^9, {3.7391984416501226`*^9, 
-   3.7391984540390515`*^9}, 3.739198572025216*^9, 3.7391986946861954`*^9, 
-   3.7391987822783475`*^9},
- CellLabel->"Out[1]=",ExpressionUUID->"5e9f3219-7977-4f43-8e4b-c5216aece09e"]
+   3.739106001304367*^9}, 3.73910606979216*^9, 3.739107892266984*^9, 
+   3.7391079875875406`*^9, 3.7391080771686153`*^9, {3.739108119506982*^9, 
+   3.7391081585776176`*^9}, 3.739116923705617*^9, 3.7391171513657255`*^9, 
+   3.739117374032791*^9, 3.7391178750563493`*^9, 3.7391243599416747`*^9, 
+   3.739197612978427*^9, 3.7392705337891965`*^9, 3.7392731187108755`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"7297a7a3-e81a-49f5-a40c-91a84de98af2"]
 }, Open  ]],
 
 Cell["Load the library:", "Text",
@@ -71,15 +78,19 @@ Cell["Load the library:", "Text",
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"Greetings", "=", 
+ RowBox[{"AddIntegers", "=", 
   RowBox[{"LibraryFunctionLoad", "[", 
-   RowBox[{"library", ",", "\"\<Greetings\>\"", ",", 
-    RowBox[{"{", "\"\<UTF8String\>\"", "}"}], ",", "\"\<UTF8String\>\""}], 
+   RowBox[{"library", ",", "\"\<AddIntegers\>\"", ",", 
+    RowBox[{"{", 
+     RowBox[{"Integer", ",", "Integer"}], "}"}], ",", "Integer"}], 
    "]"}]}]], "Input",
  CellChangeTimes->{{3.739105848717472*^9, 3.739105890216504*^9}, {
-  3.7391059455571985`*^9, 3.7391059680762825`*^9}, {3.7391824255726123`*^9, 
-  3.739182444898986*^9}},
- CellLabel->"In[2]:=",ExpressionUUID->"62a67b0b-d18f-44ae-9b33-57e569a713df"],
+  3.7391059455571985`*^9, 3.7391059680762825`*^9}, {3.739107744320021*^9, 
+  3.739107750657236*^9}, {3.739107950320916*^9, 3.739107953759204*^9}, {
+  3.73927043798588*^9, 3.739270439760577*^9}, {3.7392705406899757`*^9, 
+  3.739270545574827*^9}, {3.7392730613089695`*^9, 3.7392730677801595`*^9}, {
+  3.7392731343096333`*^9, 3.7392731352443037`*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"62a67b0b-d18f-44ae-9b33-57e569a713df"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -97,9 +108,8 @@ Cell[BoxData[
               Evaluator -> Automatic, Method -> "Preemptive"], 
              Alignment -> {Center, Center}, ImageSize -> 
              Dynamic[{
-               Automatic, 
-                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                 Magnification])}]], 
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
             GraphicsBox[{
               Thickness[0.038461538461538464`], {
                FaceForm[{
@@ -170,11 +180,11 @@ TVVwWKy880/7FHWIexrkIfLX1RzOMDZZVjHIOaDkh3vSDuj5AwCF11Vc
                RowBox[{
                  TagBox["\"Function name: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["\"Greetings\"", "SummaryItem"]}]}, {
+                 TagBox["\"AddIntegers\"", "SummaryItem"]}]}, {
                RowBox[{
                  TagBox["\"Argument count: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["1", "SummaryItem"]}]}}, 
+                 TagBox["2", "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
              False, GridBoxItemSize -> {
@@ -196,9 +206,8 @@ TVVwWKy880/7FHWIexrkIfLX1RzOMDZZVjHIOaDkh3vSDuj5AwCF11Vc
               Evaluator -> Automatic, Method -> "Preemptive"], 
              Alignment -> {Center, Center}, ImageSize -> 
              Dynamic[{
-               Automatic, 
-                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                 Magnification])}]], 
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
             GraphicsBox[{
               Thickness[0.038461538461538464`], {
                FaceForm[{
@@ -269,17 +278,18 @@ TVVwWKy880/7FHWIexrkIfLX1RzOMDZZVjHIOaDkh3vSDuj5AwCF11Vc
                RowBox[{
                  TagBox["\"Function name: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["\"Greetings\"", "SummaryItem"]}]}, {
+                 TagBox["\"AddIntegers\"", "SummaryItem"]}]}, {
                RowBox[{
                  TagBox["\"Argument count: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["1", "SummaryItem"]}]}, {
+                 TagBox["2", "SummaryItem"]}]}, {
                RowBox[{
                  TagBox["\"Argument types: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
                  TagBox[
                   PaneBox[
-                   RowBox[{"{", "\"UTF8String\"", "}"}], 
+                   RowBox[{"{", 
+                    RowBox[{"Integer", ",", "Integer"}], "}"}], 
                    ImageSize -> {{1, 500}, Automatic}, BaselinePosition -> 
                    Baseline, ContentPadding -> False, FrameMargins -> 0, 
                    StripOnInput -> True], "SummaryItem"]}]}, {
@@ -288,14 +298,14 @@ TVVwWKy880/7FHWIexrkIfLX1RzOMDZZVjHIOaDkh3vSDuj5AwCF11Vc
                  "\[InvisibleSpace]", 
                  TagBox[
                   PaneBox[
-                  "\"UTF8String\"", ImageSize -> {{1, 500}, Automatic}, 
+                  "Integer", ImageSize -> {{1, 500}, Automatic}, 
                    BaselinePosition -> Baseline, ContentPadding -> False, 
                    FrameMargins -> 0, StripOnInput -> True], 
                   "SummaryItem"]}]}, {
                RowBox[{
                  TagBox["\"Library: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["\"Greetings.dll\"", "SummaryItem"]}]}}, 
+                 TagBox["\"AddIntegers.dll\"", "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
              False, GridBoxItemSize -> {
@@ -312,51 +322,60 @@ TVVwWKy880/7FHWIexrkIfLX1RzOMDZZVjHIOaDkh3vSDuj5AwCF11Vc
      "SummaryPanel"],
     DynamicModuleValues:>{}], "]"}],
   LibraryFunction[
-  "D:\\github\\wolfram-librarylink-examples\\Examples\\Greetings\\build\\\
-Debug\\Greetings.dll", "Greetings", {"UTF8String"}, "UTF8String"],
+  "D:\\github\\wolfram-librarylink-examples\\Examples\\AddIntegers\\build\\\
+Debug\\AddIntegers.dll", "AddIntegers", {Integer, Integer}, Integer],
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
  CellChangeTimes->{{3.739105969171603*^9, 3.7391060021967382`*^9}, 
-   3.7391060711697397`*^9, 3.7391244762937517`*^9, {3.739182433456969*^9, 
-   3.7391824456639614`*^9}, 3.739197590942886*^9, 3.7391976922128143`*^9, 
-   3.739197767725191*^9, 3.7391984579757595`*^9, 3.7391985743696623`*^9, 
-   3.7391986967955685`*^9, 3.739198789602803*^9},
- CellLabel->"Out[2]=",ExpressionUUID->"8999462e-5bdf-4088-a6f0-a4a2cbc71d06"]
+   3.7391060711697397`*^9, 3.7391078947548018`*^9, 3.739107954660065*^9, 
+   3.7391079894669657`*^9, 3.739108078519744*^9, {3.739108137157239*^9, 
+   3.739108160319773*^9}, 3.739116926298662*^9, 3.7391171586717806`*^9, 
+   3.7391173743032026`*^9, 3.7391178761574097`*^9, 3.7391243616510177`*^9, 
+   3.7391976143529153`*^9, {3.739270535646973*^9, 3.7392705535886445`*^9}, {
+   3.7392731204078426`*^9, 3.739273139359383*^9}},
+ CellLabel->"Out[5]=",ExpressionUUID->"07e8d86b-aeac-4e4d-9026-6053ccf68015"]
 }, Open  ]],
 
-Cell["\<\
-The function takes a string and returns it with \
-\[OpenCurlyDoubleQuote]Greetings\[CloseCurlyDoubleQuote] prepended:\
-\>", "Text",
+Cell["The function takes two integers and returns their sum:", "Text",
  CellChangeTimes->{{3.7391061174030013`*^9, 3.739106152995204*^9}, {
-  3.739273211683591*^9, 
-  3.739273238091856*^9}},ExpressionUUID->"c4e46aae-b9da-4740-b3d4-\
+  3.7391077584797153`*^9, 3.739107761551409*^9}, {3.7392731431560135`*^9, 
+  3.7392731557720814`*^9}},ExpressionUUID->"c4e46aae-b9da-4740-b3d4-\
 d971b591423b"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"Greetings", "[", "\"\<Maria\>\"", "]"}]], "Input",
+ RowBox[{"AddIntegers", "[", 
+  RowBox[{"3", ",", "4"}], "]"}]], "Input",
  CellChangeTimes->{{3.7391060727245517`*^9, 3.739106076195772*^9}, {
-  3.7391824562520823`*^9, 3.7391824640667815`*^9}},
- CellLabel->"In[3]:=",ExpressionUUID->"2aee44e5-bd74-4776-b632-90871e9fb040"],
+  3.7391077531115847`*^9, 3.739107755206549*^9}, {3.739270441240625*^9, 
+  3.739270443015323*^9}, {3.739273122484829*^9, 3.7392731275801816`*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"2aee44e5-bd74-4776-b632-90871e9fb040"],
 
-Cell[BoxData["\<\"Greetings Maria!\"\>"], "Output",
- CellChangeTimes->{3.7391824647188015`*^9, 3.739198791730839*^9},
- CellLabel->"Out[3]=",ExpressionUUID->"ee2232a8-6083-408f-8853-5eaeb0aaeef4"]
+Cell[BoxData["7"], "Output",
+ CellChangeTimes->{
+  3.7391081619814444`*^9, 3.739116927735167*^9, 3.7391171604665346`*^9, 
+   3.739117381191558*^9, 3.739117878387338*^9, 3.739124363063369*^9, 
+   3.739197615916663*^9, {3.7392705492745295`*^9, 3.739270555420081*^9}, {
+   3.739273127995593*^9, 3.7392731407937555`*^9}},
+ CellLabel->"Out[6]=",ExpressionUUID->"1292e11b-66ef-4af5-8ec1-43879d1432e2"]
 }, Open  ]],
+
+Cell["Unload the library:", "Text",
+ CellChangeTimes->{{3.739124382953955*^9, 
+  3.739124385889764*^9}},ExpressionUUID->"9cda0e66-61be-45ed-8c1b-\
+259daf4f0b37"],
 
 Cell[BoxData[
  RowBox[{"LibraryUnload", "[", "library", "]"}]], "Input",
- CellChangeTimes->{{3.7391141311170673`*^9, 3.7391141314867754`*^9}, {
-  3.739124481226705*^9, 3.73912448481145*^9}},
- CellLabel->"In[4]:=",ExpressionUUID->"0cbef679-32cb-456a-86b2-35681f535dc5"]
+ CellChangeTimes->{{3.7391243720599732`*^9, 3.7391243780989137`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"fc74a0ea-5f7e-45a2-89cb-f9fbabe2f70f"]
 }, Open  ]]
 }, Open  ]]
 },
 WindowSize->{759, 833},
-WindowMargins->{{346, Automatic}, {35, Automatic}},
+WindowMargins->{{259, Automatic}, {77, Automatic}},
 FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
 StyleDefinitions->"Default.nb"
 ]
@@ -372,25 +391,26 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 230, 4, 96, "Title",ExpressionUUID->"1297967f-cb5a-4edf-9d0c-e27dd8a50146"],
+Cell[580, 22, 303, 5, 96, "Title",ExpressionUUID->"1297967f-cb5a-4edf-9d0c-e27dd8a50146"],
 Cell[CellGroupData[{
-Cell[835, 30, 165, 3, 53, "Subsection",ExpressionUUID->"72c31e7f-e6ef-47f9-a752-836b10910175"],
-Cell[1003, 35, 161, 3, 34, "Text",ExpressionUUID->"c510ce96-e2d9-423d-b2ed-552735483f57"],
+Cell[908, 31, 323, 5, 53, "Subsection",ExpressionUUID->"72c31e7f-e6ef-47f9-a752-836b10910175"],
+Cell[1234, 38, 161, 3, 34, "Text",ExpressionUUID->"c510ce96-e2d9-423d-b2ed-552735483f57"],
 Cell[CellGroupData[{
-Cell[1189, 42, 497, 10, 28, "Input",ExpressionUUID->"8aa2e240-abfa-44b5-894b-46319c343446"],
-Cell[1689, 54, 559, 8, 32, "Output",ExpressionUUID->"5e9f3219-7977-4f43-8e4b-c5216aece09e"]
+Cell[1420, 45, 655, 13, 28, "Input",ExpressionUUID->"8aa2e240-abfa-44b5-894b-46319c343446"],
+Cell[2078, 60, 687, 9, 32, "Output",ExpressionUUID->"7297a7a3-e81a-49f5-a40c-91a84de98af2"]
 }, Open  ]],
-Cell[2263, 65, 163, 3, 34, "Text",ExpressionUUID->"efac2de3-09b8-4860-b07a-129a8fab3591"],
+Cell[2780, 72, 163, 3, 34, "Text",ExpressionUUID->"efac2de3-09b8-4860-b07a-129a8fab3591"],
 Cell[CellGroupData[{
-Cell[2451, 72, 480, 9, 28, "Input",ExpressionUUID->"62a67b0b-d18f-44ae-9b33-57e569a713df"],
-Cell[2934, 83, 12917, 241, 71, "Output",ExpressionUUID->"8999462e-5bdf-4088-a6f0-a4a2cbc71d06"]
+Cell[2968, 79, 740, 13, 28, "Input",ExpressionUUID->"62a67b0b-d18f-44ae-9b33-57e569a713df"],
+Cell[3711, 94, 13071, 242, 71, "Output",ExpressionUUID->"07e8d86b-aeac-4e4d-9026-6053ccf68015"]
 }, Open  ]],
-Cell[15866, 327, 318, 7, 34, "Text",ExpressionUUID->"c4e46aae-b9da-4740-b3d4-d971b591423b"],
+Cell[16797, 339, 299, 4, 34, "Text",ExpressionUUID->"c4e46aae-b9da-4740-b3d4-d971b591423b"],
 Cell[CellGroupData[{
-Cell[16209, 338, 273, 4, 28, "Input",ExpressionUUID->"2aee44e5-bd74-4776-b632-90871e9fb040"],
-Cell[16485, 344, 195, 2, 32, "Output",ExpressionUUID->"ee2232a8-6083-408f-8853-5eaeb0aaeef4"]
+Cell[17121, 347, 381, 6, 28, "Input",ExpressionUUID->"2aee44e5-bd74-4776-b632-90871e9fb040"],
+Cell[17505, 355, 395, 6, 32, "Output",ExpressionUUID->"1292e11b-66ef-4af5-8ec1-43879d1432e2"]
 }, Open  ]],
-Cell[16695, 349, 268, 4, 28, "Input",ExpressionUUID->"0cbef679-32cb-456a-86b2-35681f535dc5"]
+Cell[17915, 364, 161, 3, 34, "Text",ExpressionUUID->"9cda0e66-61be-45ed-8c1b-259daf4f0b37"],
+Cell[18079, 369, 220, 3, 28, "Input",ExpressionUUID->"fc74a0ea-5f7e-45a2-89cb-f9fbabe2f70f"]
 }, Open  ]]
 }, Open  ]]
 }

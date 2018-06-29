@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     19306,        401]
-NotebookOptionsPosition[     17725,        366]
-NotebookOutlinePosition[     18068,        381]
-CellTagsIndexPosition[     18025,        378]
+NotebookDataLength[     19345,        402]
+NotebookOptionsPosition[     17764,        367]
+NotebookOutlinePosition[     18107,        382]
+CellTagsIndexPosition[     18064,        379]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -101,8 +101,9 @@ Cell[BoxData[
               Evaluator -> Automatic, Method -> "Preemptive"], 
              Alignment -> {Center, Center}, ImageSize -> 
              Dynamic[{
-               Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                AbsoluteCurrentValue[Magnification]}]], 
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
             GraphicsBox[{
               Thickness[0.038461538461538464`], {
                FaceForm[{
@@ -199,8 +200,9 @@ TVVwWKy880/7FHWIexrkIfLX1RzOMDZZVjHIOaDkh3vSDuj5AwCF11Vc
               Evaluator -> Automatic, Method -> "Preemptive"], 
              Alignment -> {Center, Center}, ImageSize -> 
              Dynamic[{
-               Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                AbsoluteCurrentValue[Magnification]}]], 
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
             GraphicsBox[{
               Thickness[0.038461538461538464`], {
                FaceForm[{
@@ -328,11 +330,10 @@ Squared.dll", "Squared", {Integer}, Integer],
  CellLabel->"Out[6]=",ExpressionUUID->"62219751-e2f6-45e0-9ff8-e689758947b1"]
 }, Open  ]],
 
-Cell["The function takes no arguments and returns \
-\[OpenCurlyDoubleQuote]Hello World\[CloseCurlyDoubleQuote]:", "Text",
+Cell["The function takes one integer and returns its square:", "Text",
  CellChangeTimes->{{3.7391061174030013`*^9, 3.739106152995204*^9}, {
-  3.7391077584797153`*^9, 
-  3.739107761551409*^9}},ExpressionUUID->"c4e46aae-b9da-4740-b3d4-\
+  3.7391077584797153`*^9, 3.739107761551409*^9}, {3.7392731736041656`*^9, 
+  3.7392731860038867`*^9}},ExpressionUUID->"c4e46aae-b9da-4740-b3d4-\
 d971b591423b"],
 
 Cell[CellGroupData[{
@@ -392,15 +393,15 @@ Cell[1912, 56, 655, 9, 32, "Output",ExpressionUUID->"826bf853-6a79-48f0-9179-0c0
 Cell[2582, 68, 163, 3, 34, "Text",ExpressionUUID->"efac2de3-09b8-4860-b07a-129a8fab3591"],
 Cell[CellGroupData[{
 Cell[2770, 75, 593, 10, 28, "Input",ExpressionUUID->"62a67b0b-d18f-44ae-9b33-57e569a713df"],
-Cell[3366, 87, 12939, 240, 71, "Output",ExpressionUUID->"62219751-e2f6-45e0-9ff8-e689758947b1"]
+Cell[3366, 87, 12979, 242, 71, "Output",ExpressionUUID->"62219751-e2f6-45e0-9ff8-e689758947b1"]
 }, Open  ]],
-Cell[16320, 330, 300, 5, 34, "Text",ExpressionUUID->"c4e46aae-b9da-4740-b3d4-d971b591423b"],
+Cell[16360, 332, 299, 4, 34, "Text",ExpressionUUID->"c4e46aae-b9da-4740-b3d4-d971b591423b"],
 Cell[CellGroupData[{
-Cell[16645, 339, 306, 5, 28, "Input",ExpressionUUID->"2aee44e5-bd74-4776-b632-90871e9fb040"],
-Cell[16954, 346, 344, 5, 32, "Output",ExpressionUUID->"ed7a16cf-2e95-4976-8dfe-4d738f801106"]
+Cell[16684, 340, 306, 5, 28, "Input",ExpressionUUID->"2aee44e5-bd74-4776-b632-90871e9fb040"],
+Cell[16993, 347, 344, 5, 32, "Output",ExpressionUUID->"ed7a16cf-2e95-4976-8dfe-4d738f801106"]
 }, Open  ]],
-Cell[17313, 354, 161, 3, 34, "Text",ExpressionUUID->"9cda0e66-61be-45ed-8c1b-259daf4f0b37"],
-Cell[17477, 359, 220, 3, 28, "Input",ExpressionUUID->"fc74a0ea-5f7e-45a2-89cb-f9fbabe2f70f"]
+Cell[17352, 355, 161, 3, 34, "Text",ExpressionUUID->"9cda0e66-61be-45ed-8c1b-259daf4f0b37"],
+Cell[17516, 360, 220, 3, 28, "Input",ExpressionUUID->"fc74a0ea-5f7e-45a2-89cb-f9fbabe2f70f"]
 }, Open  ]]
 }, Open  ]]
 }
