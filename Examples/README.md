@@ -6,3 +6,4 @@ required to introduce a new library-based function in the Wolfram Language
 3. Greetings &mdash; example showing how to pass in a string and return a string based
 on that input
 4. Squared &mdash; example showing how to square an integer
+5. AddIntegers &mdash; example showing how to add two integers
