@@ -1,4 +1,3 @@
-# HelloWorld
+# Squared
 
-This example shows how to return the string "Hello World" from a `LibraryLink` library
-to the Wolfram Language.
+This example how to pass in an integer, square it, and return the result.
