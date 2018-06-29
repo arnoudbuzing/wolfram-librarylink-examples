@@ -2,7 +2,7 @@
 
 name = "HelloWorld";
 Needs["CCompilerDriver`"];
-lib = CreateLibrary[{name<>".cpp"},name];
+lib = CreateLibrary[{name<>".cpp"},name, "TransferProtocolLibrary" -> "WSTP"];
 Print[lib];
 HelloWorld = LibraryFunctionLoad[lib,name,LinkObject,LinkObject];
 Print["HelloWorld[]: ", HelloWorld[]];
