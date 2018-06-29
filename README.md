@@ -1,5 +1,7 @@
 # wolfram-librarylink-examples
-How to create dynamic libraries that can be loaded in the Wolfram Language.
+
+LibraryLink is a tool which lets you extend the Wolfram Language with C/C++ libraries. This repository is a collection of examples which show how you to do this. It is useful for developers who want to either add their own C/C++ functions to the Wolfram Language *or*
+want to incorporate functionality from an existing C/C++ library.
 
 ## Building the examples using CMake
 
