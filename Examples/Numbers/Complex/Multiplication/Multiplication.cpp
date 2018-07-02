@@ -4,7 +4,7 @@ EXTERN_C DLLEXPORT mint WolframLibrary_getVersion( ) { return WolframLibraryVers
 EXTERN_C DLLEXPORT int WolframLibrary_initialize( WolframLibraryData libData) { return 0; }
 EXTERN_C DLLEXPORT void WolframLibrary_uninitialize( WolframLibraryData libData) { return; }
 
-EXTERN_C DLLEXPORT int ComplexMultiplication(WolframLibraryData libData, mint Argc, MArgument *Args, MArgument Res) {
+EXTERN_C DLLEXPORT int Multiplication(WolframLibraryData libData, mint Argc, MArgument *Args, MArgument Res) {
 	mcomplex x,y,z;
 
 	x = MArgument_getComplex(Args[0]);
