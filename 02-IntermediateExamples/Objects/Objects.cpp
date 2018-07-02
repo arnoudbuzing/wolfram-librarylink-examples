@@ -5,7 +5,7 @@ EXTERN_C DLLEXPORT mint WolframLibrary_getVersion( ) { return WolframLibraryVers
 EXTERN_C DLLEXPORT int WolframLibrary_initialize( WolframLibraryData libData) { return 0; }
 EXTERN_C DLLEXPORT void WolframLibrary_uninitialize( WolframLibraryData libData) { return; }
 
-Rectangle r;
+Rectangle r(0,0);
 
 EXTERN_C DLLEXPORT int set(WolframLibraryData libData, mint Argc, MArgument *Args, MArgument Res) {
 	mint x,y;
@@ -26,8 +26,6 @@ EXTERN_C DLLEXPORT int get_h(WolframLibraryData libData, mint Argc, MArgument *A
 }
 
 EXTERN_C DLLEXPORT int compute(WolframLibraryData libData, mint Argc, MArgument *Args, MArgument Res) {
-	mint result;
-	result = r.area();
-	MArgument_setInteger(Res,result);
+	MArgument_setInteger(Res,r.area());
 	return LIBRARY_NO_ERROR;
 }
