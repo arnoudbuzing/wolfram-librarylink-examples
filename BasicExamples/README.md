@@ -5,7 +5,8 @@ required to introduce a new library-based function in the Wolfram Language
 2. Strings &mdash; examples which show how to manipulate strings
 on that input
 3. Numbers &mdash; examples showing how to work with integers, reals, and complex numbers
-4. RawArray &mdash; examples showing how to work with raw binary data
+4. Expressions &mdash; examples showing how to work with Wolfram Language expressions
+5. BinaryData &mdash; examples showing how to work with raw binary data (`RawArray`)
 
 ## Building the examples
 
