@@ -2,7 +2,7 @@
 
 name="Objects";
 Needs["CCompilerDriver`"];
-lib = CreateLibrary[{name<>".cpp"},name];
+lib = CreateLibrary[{"Objects.cpp", "Rectangle.cpp"},name];
 Print[lib];
 set = LibraryFunctionLoad[lib,"set",{Integer,Integer},"Void"];
 getW = LibraryFunctionLoad[lib,"get_w",{},Integer];
