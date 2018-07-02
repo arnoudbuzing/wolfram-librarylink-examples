@@ -13,10 +13,10 @@ public:
 	mint compute(void);
 };
 
-void obj::set(mint ww, mint hh) {	w = ww;	h = hh; }
+void obj::set(mint ww, mint hh) { w = ww;	h = hh; }
 mint obj::get_w(void) {	return w; }
 mint obj::get_h(void) {	return h;}
-mint obj::compute(void) {	return w*h; }
+mint obj::compute(void) { return w*h; }
 
 
 obj o;
