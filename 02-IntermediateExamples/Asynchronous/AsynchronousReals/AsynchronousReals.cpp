@@ -15,7 +15,7 @@ typedef struct background_struct
 	mreal background_real_input;
 } * background_struct_pointer;
 
-static void return_real(mint, background_struct_pointer);
+static void return_real(mint, background_struct_pointer); 
 static void run_background_task(mint, void*);
 
 //
