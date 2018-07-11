@@ -1,6 +1,5 @@
 #include <stdlib.h> // for malloc function
 #include <windows.h> // For Sleep function
-
 #include "WolframLibrary.h"
 #include "WolframIOLibraryFunctions.h"
 
@@ -15,12 +14,8 @@ typedef struct background_struct
 	mreal background_real_input;
 } * background_struct_pointer;
 
-static void return_real(mint, background_struct_pointer); 
+static void return_real(mint, background_struct_pointer);
 static void run_background_task(mint, void*);
-
-//
-// Wolfram Language level functions
-//
 
 EXTERN_C DLLEXPORT int start_background_task(WolframLibraryData libData, mint Argc, MArgument *Args, MArgument Res)
 {
@@ -35,10 +30,6 @@ EXTERN_C DLLEXPORT int start_background_task(WolframLibraryData libData, mint Ar
 
 	return LIBRARY_NO_ERROR;
 }
-
-//
-// Library private functions
-//
 
 static void run_background_task(mint asyncid, void* background_data_pointer) {
 	background_struct_pointer background_data = (background_struct_pointer) background_data_pointer;
