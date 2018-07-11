@@ -13,9 +13,9 @@ typedef struct background_struct
 	WolframLibraryData libData;
 	mint pause_milliseconds;
 	mreal background_real_input;
-} *background_struct_pointer;
+} * background_struct_pointer;
 
-static void return_real(mint, void*);
+static void return_real(mint, background_struct_pointer);
 static void run_background_task(mint, void*);
 
 //
@@ -36,34 +36,24 @@ EXTERN_C DLLEXPORT int start_background_task(WolframLibraryData libData, mint Ar
 	return LIBRARY_NO_ERROR;
 }
 
-EXTERN_C DLLEXPORT int stop_background_task(WolframLibraryData libData, mint Argc, MArgument *Args, MArgument Res)
-{
-	mint asyncid;
-	WolframIOLibrary_Functions ioLibrary = libData->ioLibraryFunctions;
-	asyncid = MArgument_getInteger(Args[0]);
-	ioLibrary->removeAsynchronousTask(asyncid);
-	return LIBRARY_NO_ERROR;
-}
-
 //
 // Library private functions
 //
 
-static void run_background_task(mint asyncid, void* vtarg) {
-	background_struct_pointer targ = (background_struct_pointer) vtarg;
+static void run_background_task(mint asyncid, void* background_data_pointer) {
+	background_struct_pointer background_data = (background_struct_pointer) background_data_pointer;
 	while(1) { // run forever until stopped or aborted
-		mint abortedQ = targ->libData->AbortQ();
-		if(abortedQ) break;
-		Sleep( (int) targ->pause_milliseconds );
-		return_real(asyncid, vtarg);
+		mbool aliveQ = background_data->libData->ioLibraryFunctions->asynchronousTaskAliveQ(asyncid);
+		if( ! aliveQ ) break;
+		Sleep( (int) background_data->pause_milliseconds );
+		return_real(asyncid, background_data);
 	}
 }
 
-static void return_real(mint asyncid, void* vtarg)
+static void return_real(mint asyncid, background_struct_pointer background_data)
 {
-	background_struct_pointer targ = (background_struct_pointer) vtarg;
 	DataStore ds;
-	ds = targ->libData->ioLibraryFunctions->createDataStore();
-	targ->libData->ioLibraryFunctions->DataStore_addReal(ds, targ->background_real_input );
-	targ->libData->ioLibraryFunctions->raiseAsyncEvent(asyncid, "return_real", ds);
+	ds = background_data->libData->ioLibraryFunctions->createDataStore();
+	background_data->libData->ioLibraryFunctions->DataStore_addReal(ds, background_data->background_real_input );
+	background_data->libData->ioLibraryFunctions->raiseAsyncEvent(asyncid, "return_real", ds);
 }
