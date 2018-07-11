@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     38873,        784]
-NotebookOptionsPosition[     36244,        733]
-NotebookOutlinePosition[     36586,        748]
-CellTagsIndexPosition[     36543,        745]
+NotebookDataLength[     23191,        479]
+NotebookOptionsPosition[     21285,        439]
+NotebookOutlinePosition[     21628,        454]
+CellTagsIndexPosition[     21585,        451]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -63,8 +63,9 @@ IntermediateExamples\\\\Asynchronous\\\\AsynchronousReals\\\\build\\\\Debug\\\
    3.739197612978427*^9, 3.7392705337891965`*^9, 3.7392731187108755`*^9, 
    3.7395390839114923`*^9, 3.7403233775569077`*^9, 3.7403235103433733`*^9, 
    3.740323762648711*^9, 3.7403244974945*^9, 3.740324970320711*^9, 
-   3.740325330865265*^9, 3.740326020045782*^9},
- CellLabel->"Out[1]=",ExpressionUUID->"54b4aec5-cc25-4e95-9bc7-84bea524e560"]
+   3.740325330865265*^9, 3.740326020045782*^9, 3.740330479889556*^9, 
+   3.740330839326435*^9, 3.740331476164441*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"e2d76249-26a7-49ea-a69d-125b92ad303f"]
 }, Open  ]],
 
 Cell["Load the library:", "Text",
@@ -336,403 +337,108 @@ Asynchronous\\AsynchronousReals\\build\\Debug\\AsynchronousReals.dll",
    3.7392731204078426`*^9, 3.739273139359383*^9}, 3.739539085771347*^9, 
    3.740323456679467*^9, 3.740323511672305*^9, 3.7403237645736113`*^9, 
    3.740324498862954*^9, 3.74032497259739*^9, 3.740325338774782*^9, 
-   3.740326021986639*^9},
- CellLabel->"Out[2]=",ExpressionUUID->"9711c16f-03ca-4fbb-8e01-57ed8a1da878"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"StopBackgroundTask", "=", 
-  RowBox[{"LibraryFunctionLoad", "[", 
-   RowBox[{"library", ",", "\"\<stop_background_task\>\"", ",", 
-    RowBox[{"{", "Integer", "}"}], ",", "\"\<Void\>\""}], "]"}]}]], "Input",
- CellChangeTimes->{{3.739105848717472*^9, 3.739105890216504*^9}, {
-  3.7391059455571985`*^9, 3.7391059680762825`*^9}, {3.739107744320021*^9, 
-  3.739107750657236*^9}, {3.739107950320916*^9, 3.739107953759204*^9}, {
-  3.73927043798588*^9, 3.739270439760577*^9}, {3.7392705406899757`*^9, 
-  3.739270545574827*^9}, {3.7392730613089695`*^9, 3.7392730677801595`*^9}, {
-  3.7392731343096333`*^9, 3.7392731352443037`*^9}, {3.739538888111532*^9, 
-  3.7395388923265905`*^9}, {3.74032338537342*^9, 3.7403233882298117`*^9}, {
-  3.7403234219158936`*^9, 3.740323454588718*^9}, {3.7403253395925856`*^9, 
-  3.74032535439976*^9}},
- CellLabel->"In[3]:=",ExpressionUUID->"b0a97bb6-a189-424f-a64d-4154f2914a2c"],
-
-Cell[BoxData[
- InterpretationBox[
-  RowBox[{
-   TagBox["LibraryFunction",
-    "SummaryHead"], "[", 
-   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
-    TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
-            PaneBox[
-             ButtonBox[
-              DynamicBox[
-               FEPrivate`FrontEndResource[
-               "FEBitmaps", "SquarePlusIconMedium"]], 
-              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
-              Evaluator -> Automatic, Method -> "Preemptive"], 
-             Alignment -> {Center, Center}, ImageSize -> 
-             Dynamic[{
-               Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                AbsoluteCurrentValue[Magnification]}]], 
-            GraphicsBox[{
-              Thickness[0.038461538461538464`], {
-               FaceForm[{
-                 GrayLevel[0.93], 
-                 Opacity[1.]}], 
-               
-               FilledCurveBox[{{{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {
-                1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}}}, {{{
-                25.499999999999996`, 2.5}, {25.499999999999996`, 
-                1.3953100000000003`}, {24.604699999999998`, 
-                0.49999999999999994`}, {23.5, 0.49999999999999994`}, {2.5, 
-                0.49999999999999994`}, {1.3953100000000003`, 
-                0.49999999999999994`}, {0.49999999999999994`, 
-                1.3953100000000003`}, {0.49999999999999994`, 2.5}, {
-                0.49999999999999994`, 23.5}, {0.49999999999999994`, 
-                24.604699999999998`}, {1.3953100000000003`, 
-                25.499999999999996`}, {2.5, 25.499999999999996`}, {23.5, 
-                25.499999999999996`}, {24.604699999999998`, 
-                25.499999999999996`}, {25.499999999999996`, 
-                24.604699999999998`}, {25.499999999999996`, 23.5}, {
-                25.499999999999996`, 2.5}}}]}, {
-               FaceForm[{
-                 RGBColor[0.5, 0.5, 0.5], 
-                 Opacity[1.]}], 
-               
-               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
-                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{20.5426, 
-                19.116799999999998`}, {16.3832, 21.876199999999997`}, {
-                16.3832, 20.021499999999996`}, {6.930469999999999, 
-                20.021499999999996`}, {6.930469999999999, 
-                18.212100000000003`}, {16.3832, 18.212100000000003`}, {
-                16.3832, 16.357399999999995`}, {20.5426, 
-                19.116799999999998`}}}], 
-               
-               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
-                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{5.30508, 13.8391}, {
-                9.46445, 11.079700000000003`}, {9.46445, 
-                12.933999999999997`}, {18.917199999999998`, 
-                12.933999999999997`}, {18.917199999999998`, 14.7438}, {
-                9.46445, 14.7438}, {9.46445, 16.598}, {5.30508, 13.8391}}}], 
-               
-               FilledCurveBox[{{{1, 4, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {
-                0, 1, 0}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 
-                3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {1,
-                 3, 3}, {1, 3, 3}, {1, 3, 3}}}, CompressedData["
-1:eJxTTMoPSmVmYGBgBGJjIGYCYq4u+eR3VWoOxhkv5j+Qk3SA8fu/r5rKOVHM
-Yd2vmNyjZ9Qcrt9QXbW9S8RBg59767IidQcPMYPGaHFhB+Nn61SfiGo4xBwp
-T7o2V9Dh0Iolfg6/NBxEHv/x1Xgi4FB1XNNqkqQWnP+axUTQjFkbzn+oO2HB
-j/3aDg/Xn5T6WiDoYLs3aJpiqI7DrHN+bO6tQg4zfUR7vF7pQOyfIQyRd9d1
-WLL0U1kLoyjEPdm6DpoTXfQX7xBzKPjQejLkhDacL5J4+LL2Gm2HtNnSl4Vf
-iELM69J2qPZM3tLnJerQX1oozZugDfHPUxGI/4W1HQ5p3TthoyDi4D7lG1v8
-Mi2HgqL9zoEHhB1inOxe3BRG8MH62zXhfIbN1Z82CGhC/GMg4nCm3mN/7TYN
-iHlCUPdGakDc/1kUEr46GhD/eYnD+d9iBf/kC0vC+TuCrSL+X5Vy2HGR4R5T
-uAbEfxYykPBYp+HQqsCuesZAFhL+rJoQ/2rIQdxTpwkJ7yVycPfD+GDzVqLx
-xbUd5HYt2JfqBdWfpA2Jj9mykPDpgYaXtaxDy7yzq86vg8qvlIHE5ylY/Eo7
-XAt7o787TxfOB5ufqesQ9PbyxxkPZSDhZ6nrMAGU3u7LQtLLEx2HN2253UbX
-ofZ76jis/Pay4oynAsT8QG0HKZMv/gW7FCDyTFpwPsz/MD44/Mw1HFjb1uR9
-TVVwWKy880/7FHWIexrkIfLX1RzOMDZZVjHIOaDkh3vSDuj5AwCF11Vc
-                "]]}}, Background -> GrayLevel[0.93], Axes -> False, 
-             AspectRatio -> 1, ImageSize -> {Automatic, 
-               Dynamic[
-               3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                 Magnification]), ImageSizeCache -> {45., {0., 9.}}]}, Frame -> 
-             True, FrameTicks -> None, FrameStyle -> Directive[
-               Thickness[Tiny], 
-               GrayLevel[0.7]]], 
-            GridBox[{{
-               RowBox[{
-                 TagBox["\"Function name: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["\"stop_background_task\"", "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox["\"Argument count: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["1", "SummaryItem"]}]}}, 
-             GridBoxAlignment -> {
-              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-             False, GridBoxItemSize -> {
-              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
-              BaseStyle -> {
-              ShowStringCharacters -> False, NumberMarks -> False, 
-               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
-          GridBoxItemSize -> {
-           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-          BaselinePosition -> {1, 1}], True -> GridBox[{{
-            PaneBox[
-             ButtonBox[
-              DynamicBox[
-               FEPrivate`FrontEndResource[
-               "FEBitmaps", "SquareMinusIconMedium"]], 
-              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
-              Evaluator -> Automatic, Method -> "Preemptive"], 
-             Alignment -> {Center, Center}, ImageSize -> 
-             Dynamic[{
-               Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                AbsoluteCurrentValue[Magnification]}]], 
-            GraphicsBox[{
-              Thickness[0.038461538461538464`], {
-               FaceForm[{
-                 GrayLevel[0.93], 
-                 Opacity[1.]}], 
-               
-               FilledCurveBox[{{{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {
-                1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}}}, {{{
-                25.499999999999996`, 2.5}, {25.499999999999996`, 
-                1.3953100000000003`}, {24.604699999999998`, 
-                0.49999999999999994`}, {23.5, 0.49999999999999994`}, {2.5, 
-                0.49999999999999994`}, {1.3953100000000003`, 
-                0.49999999999999994`}, {0.49999999999999994`, 
-                1.3953100000000003`}, {0.49999999999999994`, 2.5}, {
-                0.49999999999999994`, 23.5}, {0.49999999999999994`, 
-                24.604699999999998`}, {1.3953100000000003`, 
-                25.499999999999996`}, {2.5, 25.499999999999996`}, {23.5, 
-                25.499999999999996`}, {24.604699999999998`, 
-                25.499999999999996`}, {25.499999999999996`, 
-                24.604699999999998`}, {25.499999999999996`, 23.5}, {
-                25.499999999999996`, 2.5}}}]}, {
-               FaceForm[{
-                 RGBColor[0.5, 0.5, 0.5], 
-                 Opacity[1.]}], 
-               
-               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
-                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{20.5426, 
-                19.116799999999998`}, {16.3832, 21.876199999999997`}, {
-                16.3832, 20.021499999999996`}, {6.930469999999999, 
-                20.021499999999996`}, {6.930469999999999, 
-                18.212100000000003`}, {16.3832, 18.212100000000003`}, {
-                16.3832, 16.357399999999995`}, {20.5426, 
-                19.116799999999998`}}}], 
-               
-               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
-                0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{5.30508, 13.8391}, {
-                9.46445, 11.079700000000003`}, {9.46445, 
-                12.933999999999997`}, {18.917199999999998`, 
-                12.933999999999997`}, {18.917199999999998`, 14.7438}, {
-                9.46445, 14.7438}, {9.46445, 16.598}, {5.30508, 13.8391}}}], 
-               
-               FilledCurveBox[{{{1, 4, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {
-                0, 1, 0}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 
-                3}, {1, 3, 3}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {1,
-                 3, 3}, {1, 3, 3}, {1, 3, 3}}}, CompressedData["
-1:eJxTTMoPSmVmYGBgBGJjIGYCYq4u+eR3VWoOxhkv5j+Qk3SA8fu/r5rKOVHM
-Yd2vmNyjZ9Qcrt9QXbW9S8RBg59767IidQcPMYPGaHFhB+Nn61SfiGo4xBwp
-T7o2V9Dh0Iolfg6/NBxEHv/x1Xgi4FB1XNNqkqQWnP+axUTQjFkbzn+oO2HB
-j/3aDg/Xn5T6WiDoYLs3aJpiqI7DrHN+bO6tQg4zfUR7vF7pQOyfIQyRd9d1
-WLL0U1kLoyjEPdm6DpoTXfQX7xBzKPjQejLkhDacL5J4+LL2Gm2HtNnSl4Vf
-iELM69J2qPZM3tLnJerQX1oozZugDfHPUxGI/4W1HQ5p3TthoyDi4D7lG1v8
-Mi2HgqL9zoEHhB1inOxe3BRG8MH62zXhfIbN1Z82CGhC/GMg4nCm3mN/7TYN
-iHlCUPdGakDc/1kUEr46GhD/eYnD+d9iBf/kC0vC+TuCrSL+X5Vy2HGR4R5T
-uAbEfxYykPBYp+HQqsCuesZAFhL+rJoQ/2rIQdxTpwkJ7yVycPfD+GDzVqLx
-xbUd5HYt2JfqBdWfpA2Jj9mykPDpgYaXtaxDy7yzq86vg8qvlIHE5ylY/Eo7
-XAt7o787TxfOB5ufqesQ9PbyxxkPZSDhZ6nrMAGU3u7LQtLLEx2HN2253UbX
-ofZ76jis/Pay4oynAsT8QG0HKZMv/gW7FCDyTFpwPsz/MD44/Mw1HFjb1uR9
-TVVwWKy880/7FHWIexrkIfLX1RzOMDZZVjHIOaDkh3vSDuj5AwCF11Vc
-                "]]}}, Background -> GrayLevel[0.93], Axes -> False, 
-             AspectRatio -> 1, ImageSize -> {Automatic, 
-               Dynamic[
-               3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                 Magnification]), ImageSizeCache -> {45., {0., 9.}}]}, Frame -> 
-             True, FrameTicks -> None, FrameStyle -> Directive[
-               Thickness[Tiny], 
-               GrayLevel[0.7]]], 
-            GridBox[{{
-               RowBox[{
-                 TagBox["\"Function name: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["\"stop_background_task\"", "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox["\"Argument count: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["1", "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox["\"Argument types: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox[
-                  PaneBox[
-                   RowBox[{"{", "Integer", "}"}], 
-                   ImageSize -> {{1, 500}, Automatic}, BaselinePosition -> 
-                   Baseline, ContentPadding -> False, FrameMargins -> 0, 
-                   StripOnInput -> True], "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox["\"Return type: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox[
-                  PaneBox[
-                   RowBox[{"{", "}"}], ImageSize -> {{1, 500}, Automatic}, 
-                   BaselinePosition -> Baseline, ContentPadding -> False, 
-                   FrameMargins -> 0, StripOnInput -> True], 
-                  "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox["\"Library: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["\"AsynchronousReals.dll\"", "SummaryItem"]}]}}, 
-             GridBoxAlignment -> {
-              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-             False, GridBoxItemSize -> {
-              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
-              BaseStyle -> {
-              ShowStringCharacters -> False, NumberMarks -> False, 
-               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
-          GridBoxItemSize -> {
-           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-          BaselinePosition -> {1, 1}]}, 
-       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
-     "SummaryPanel"],
-    DynamicModuleValues:>{}], "]"}],
-  LibraryFunction[
-  "D:\\github\\wolfram-librarylink-examples\\02-IntermediateExamples\\\
-Asynchronous\\AsynchronousReals\\build\\Debug\\AsynchronousReals.dll", 
-   "stop_background_task", {Integer}, {}],
-  Editable->False,
-  SelectWithContents->True,
-  Selectable->False]], "Output",
- CellChangeTimes->{3.740325356750883*^9, 3.740326023740548*^9},
- CellLabel->"Out[3]=",ExpressionUUID->"9e322622-dd44-4762-a72e-122e657f70f4"]
-}, Open  ]],
-
-Cell["Options:", "Text",
- CellChangeTimes->{{3.740323819363419*^9, 
-  3.740323820658887*^9}},ExpressionUUID->"13efff8a-8bf1-4cff-9d08-\
-03deebcbd80e"],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"Internal`CreateAsynchronousTask", "//", "Options"}]], "Input",
- CellChangeTimes->{{3.7403238101330175`*^9, 3.7403238111798363`*^9}},
- CellLabel->
-  "In[120]:=",ExpressionUUID->"ad7fd4be-5bed-4d04-8a46-ba4f85625d49"],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-   RowBox[{"\<\"Blocking\"\>", "\[Rule]", "False"}], ",", 
-   RowBox[{"\<\"PostRemoveAsynchronousTask\"\>", "\[Rule]", "None"}], ",", 
-   RowBox[{"\<\"PostStartAsynchronousTask\"\>", "\[Rule]", "None"}], ",", 
-   RowBox[{"\<\"PostStopAsynchronousTask\"\>", "\[Rule]", "None"}], ",", 
-   RowBox[{"\<\"PreRemoveAsynchronousTask\"\>", "\[Rule]", "None"}], ",", 
-   RowBox[{"\<\"PreStartAsynchronousTask\"\>", "\[Rule]", "None"}], ",", 
-   RowBox[{"\<\"PreStopAsynchronousTask\"\>", "\[Rule]", "None"}], ",", 
-   RowBox[{"\<\"TaskDetail\"\>", "\[Rule]", "\<\"\"\>"}], ",", 
-   RowBox[{"\<\"UserData\"\>", "\[Rule]", "None"}], ",", 
-   RowBox[{"\<\"Visible\"\>", "\[Rule]", "True"}]}], "}"}]], "Output",
- CellChangeTimes->{3.7403238304726973`*^9},
- CellLabel->
-  "Out[120]=",ExpressionUUID->"bb21c683-c8e1-48af-8317-f635229aa784"]
+   3.740326021986639*^9, 3.740330488191165*^9, 3.740330841546606*^9, 
+   3.7403314781975107`*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"2c7fad70-0610-4060-8b67-9eb4f35007f9"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"task", "=", 
-  RowBox[{"Internal`CreateAsynchronousTask", "[", 
-   RowBox[{"StartBackgroundTask", ",", 
+  RowBox[{"Internal`CreateAsynchronousTask", "[", "\[IndentingNewLine]", 
+   RowBox[{"StartBackgroundTask", ",", "\[IndentingNewLine]", 
     RowBox[{"{", 
-     RowBox[{"2000", ",", 
-      RowBox[{"RandomReal", "[", "]"}]}], "}"}], ",", 
+     RowBox[{"1000", ",", 
+      RowBox[{"RandomReal", "[", "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
     RowBox[{
      RowBox[{"Print", "[", 
       RowBox[{"FullForm", "[", 
        RowBox[{"{", "##", "}"}], "]"}], "]"}], "&"}], ",", 
+    "\[IndentingNewLine]", 
     RowBox[{"\"\<TaskDetail\>\"", "\[Rule]", "\"\<background_task\>\""}]}], 
    "]"}]}]], "Input",
  CellChangeTimes->{{3.740324514586635*^9, 3.740324515074148*^9}, {
   3.7403254486669188`*^9, 3.74032545008072*^9}, {3.740326031226855*^9, 
-  3.740326031474907*^9}},
- CellLabel->"In[6]:=",ExpressionUUID->"abc99907-49d5-4596-946b-34a4ceb89c3c"],
+  3.740326031474907*^9}, {3.740331492447483*^9, 3.740331503773177*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"abc99907-49d5-4596-946b-34a4ceb89c3c"],
 
 Cell[BoxData[
  InterpretationBox[
   RowBox[{
-  "AsynchronousTaskObject", "[", "\<\"background_task\"\>", ",", "2", ",", 
+  "AsynchronousTaskObject", "[", "\<\"background_task\"\>", ",", "1", ",", 
    RowBox[{" ", "<>"}], "]"}],
   AsynchronousTaskObject[
-  "background_task", 2, 20317181405491935528]]], "Output",
+  "background_task", 1, 20317217081703952877]]], "Output",
  CellChangeTimes->{
   3.7403245215143237`*^9, 3.7403249786659956`*^9, 3.740325363813134*^9, 
    3.7403254116427712`*^9, 3.7403254513211308`*^9, {3.7403260322538023`*^9, 
-   3.7403260460401745`*^9}},
- CellLabel->"Out[6]=",ExpressionUUID->"97660720-f258-43a0-ae7f-317b7a7b8a6a"]
+   3.7403260460401745`*^9}, 3.74033048869462*^9, {3.7403308487839994`*^9, 
+   3.7403308751036377`*^9}, 3.740331303380407*^9, 3.740331506103569*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"61d4cb59-652a-46f2-9fb8-5c078eda0cff"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"WaitAsynchronousTask", "[", "task", "]"}]], "Input",
- CellChangeTimes->{{3.7403254524912434`*^9, 3.7403254552171645`*^9}},
- CellLabel->"In[7]:=",ExpressionUUID->"6e4ad93f-42cc-470e-9b28-fed27aa73045"],
-
-Cell[BoxData["$Aborted"], "Output",
- CellChangeTimes->{3.740325474091663*^9, 3.7403260523615556`*^9},
- CellLabel->"Out[7]=",ExpressionUUID->"01a6f008-654e-49fb-9d19-50cb9e45a2eb"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData["111"], "Input",
- CellChangeTimes->{{3.740326054658762*^9, 3.740326054984612*^9}},
- CellLabel->"In[8]:=",ExpressionUUID->"f834302b-f10d-4dd3-849a-3b5f257eeb4b"],
-
-Cell[BoxData["111"], "Output",
- CellChangeTimes->{3.7403260552961807`*^9},
- CellLabel->"Out[8]=",ExpressionUUID->"5f602395-f44c-419d-8ae5-076f377cb69b"]
-}, Open  ]],
+ RowBox[{"RemoveAsynchronousTask", "[", "task", "]"}]], "Input",
+ CellChangeTimes->{{3.7403308604489355`*^9, 3.740330865654294*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"c0206d51-ed30-4a0e-9484-273963b0b601"],
 
 Cell[BoxData[
- RowBox[{"StopBackgroundTask", "[", "2", "]"}]], "Input",
- CellChangeTimes->{{3.7403253752425375`*^9, 3.740325416968666*^9}, 
-   3.740326041994311*^9, {3.7403260800607204`*^9, 3.740326080136292*^9}},
- CellLabel->"In[9]:=",ExpressionUUID->"fb75291c-a2d9-48bb-9b53-5f6c6174923a"],
-
-Cell["The function takes two integers and returns their sum:", "Text",
- CellChangeTimes->{{3.7391061174030013`*^9, 3.739106152995204*^9}, {
-  3.7391077584797153`*^9, 3.739107761551409*^9}, {3.7392731431560135`*^9, 
-  3.7392731557720814`*^9}},ExpressionUUID->"c4e46aae-b9da-4740-b3d4-\
-d971b591423b"],
-
-Cell[BoxData[{
- RowBox[{
-  RowBox[{"Internal`CreateAsynchronousTask", "[", 
-   RowBox[{"StartBackgroundTask", ",", 
-    RowBox[{"{", 
-     RowBox[{"5000", ",", 
-      RowBox[{"RandomReal", "[", "]"}]}], "}"}], ",", 
-    RowBox[{
-     RowBox[{"Print", "[", 
-      RowBox[{"FullForm", "[", 
-       RowBox[{"{", "##", "}"}], "]"}], "]"}], "&"}], ",", 
-    RowBox[{"\"\<TaskDetail\>\"", "\[Rule]", "\"\<background_task\>\""}]}], 
-   "]"}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"Pause", "[", "7", "]"}], ";"}]}], "Input",
- CellChangeTimes->{{3.740323526197818*^9, 3.740323560588415*^9}, {
-  3.7403236135350814`*^9, 3.740323620363946*^9}, {3.740323656895792*^9, 
-  3.740323658741678*^9}, {3.74032375474938*^9, 3.7403237564039373`*^9}, {
-  3.7403238014696283`*^9, 3.7403238027564507`*^9}, {3.74032383302267*^9, 
-  3.740323890539527*^9}},
+ TemplateBox[{
+  "RemoveAsynchronousTask","asyncobj",
+   "\"Asynchronous task object \
+\\!\\(\\*InterpretationBox[RowBox[{\\\"AsynchronousTaskObject\\\", \\\"[\\\", \
+\\\"\\\\\\\"background_task\\\\\\\"\\\", \\\",\\\", \\\"1\\\", \\\",\\\", \
+\\\" <>\\\", \\\"]\\\"}], AsynchronousTaskObject[\\\"background_task\\\", 1, \
+20317217081703952877]]\\) has an invalid identification number. It may have \
+been removed.\"",2,7,1,20317217081703952877,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7403323935186605`*^9},
  CellLabel->
-  "In[122]:=",ExpressionUUID->"a8b3504e-f0a7-44bb-8072-812a8c2297a0"],
+  "During evaluation of \
+In[7]:=",ExpressionUUID->"38b1402e-fed5-426b-820d-e8fb68bb8e4a"],
+
+Cell[BoxData["$Failed"], "Output",
+ CellChangeTimes->{3.740332393522164*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"8a8bf1d9-114f-46ce-a745-2792f44e73fe"]
+}, Open  ]],
 
 Cell["Unload the library:", "Text",
  CellChangeTimes->{{3.739124382953955*^9, 
   3.739124385889764*^9}},ExpressionUUID->"9cda0e66-61be-45ed-8c1b-\
 259daf4f0b37"],
 
+Cell[CellGroupData[{
+
 Cell[BoxData[
  RowBox[{"LibraryUnload", "[", "library", "]"}]], "Input",
  CellChangeTimes->{{3.7391243720599732`*^9, 3.7391243780989137`*^9}},
- CellLabel->"In[10]:=",ExpressionUUID->"fc74a0ea-5f7e-45a2-89cb-f9fbabe2f70f"]
+ CellLabel->"In[8]:=",ExpressionUUID->"fc74a0ea-5f7e-45a2-89cb-f9fbabe2f70f"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "LibraryFunction","unloadlib",
+   "\"The library \\!\\(\\*RowBox[{\\\"\\\\\\\"D:\\\\\\\\\\\\\\\\github\\\\\\\
+\\\\\\\\\\wolfram-librarylink-examples\\\\\\\\\\\\\\\\02-IntermediateExamples\
+\\\\\\\\\\\\\\\\Asynchronous\\\\\\\\\\\\\\\\AsynchronousReals\\\\\\\\\\\\\\\\\
+build\\\\\\\\\\\\\\\\Debug\\\\\\\\\\\\\\\\AsynchronousReals.dll\\\\\\\"\\\"}]\
+\\) cannot be unloaded.\"",2,8,2,20317217081703952877,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7403323951733637`*^9},
+ CellLabel->
+  "During evaluation of \
+In[8]:=",ExpressionUUID->"a06e318d-8c30-44f9-bb5f-2d64d94bf321"],
+
+Cell[BoxData["$Failed"], "Output",
+ CellChangeTimes->{3.7403323951763673`*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"419114e6-a413-4534-8196-416a3802423e"]
+}, Open  ]]
 }, Open  ]]
 },
 WindowSize->{759, 833},
-WindowMargins->{{Automatic, 49}, {77, Automatic}},
+WindowMargins->{{520, Automatic}, {68, Automatic}},
 FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
 StyleDefinitions->"Default.nb"
 ]
@@ -752,39 +458,28 @@ Cell[580, 22, 408, 6, 96, "Title",ExpressionUUID->"1297967f-cb5a-4edf-9d0c-e27dd
 Cell[991, 30, 161, 3, 34, "Text",ExpressionUUID->"c510ce96-e2d9-423d-b2ed-552735483f57"],
 Cell[CellGroupData[{
 Cell[1177, 37, 759, 14, 28, "Input",ExpressionUUID->"8aa2e240-abfa-44b5-894b-46319c343446"],
-Cell[1939, 53, 924, 13, 52, "Output",ExpressionUUID->"54b4aec5-cc25-4e95-9bc7-84bea524e560"]
+Cell[1939, 53, 994, 14, 52, "Output",ExpressionUUID->"e2d76249-26a7-49ea-a69d-125b92ad303f"]
 }, Open  ]],
-Cell[2878, 69, 163, 3, 34, "Text",ExpressionUUID->"efac2de3-09b8-4860-b07a-129a8fab3591"],
+Cell[2948, 70, 163, 3, 34, "Text",ExpressionUUID->"efac2de3-09b8-4860-b07a-129a8fab3591"],
 Cell[CellGroupData[{
-Cell[3066, 76, 904, 15, 48, "Input",ExpressionUUID->"62a67b0b-d18f-44ae-9b33-57e569a713df"],
-Cell[3973, 93, 13335, 246, 71, "Output",ExpressionUUID->"9711c16f-03ca-4fbb-8e01-57ed8a1da878"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[17345, 344, 924, 14, 48, "Input",ExpressionUUID->"b0a97bb6-a189-424f-a64d-4154f2914a2c"],
-Cell[18272, 360, 12670, 236, 71, "Output",ExpressionUUID->"9e322622-dd44-4762-a72e-122e657f70f4"]
-}, Open  ]],
-Cell[30957, 599, 150, 3, 34, "Text",ExpressionUUID->"13efff8a-8bf1-4cff-9d08-03deebcbd80e"],
-Cell[CellGroupData[{
-Cell[31132, 606, 239, 4, 28, "Input",ExpressionUUID->"ad7fd4be-5bed-4d04-8a46-ba4f85625d49"],
-Cell[31374, 612, 865, 15, 90, "Output",ExpressionUUID->"bb21c683-c8e1-48af-8317-f635229aa784"]
+Cell[3136, 77, 904, 15, 48, "Input",ExpressionUUID->"62a67b0b-d18f-44ae-9b33-57e569a713df"],
+Cell[4043, 94, 13407, 247, 71, "Output",ExpressionUUID->"2c7fad70-0610-4060-8b67-9eb4f35007f9"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[32276, 632, 702, 16, 48, "Input",ExpressionUUID->"abc99907-49d5-4596-946b-34a4ceb89c3c"],
-Cell[32981, 650, 513, 11, 32, "Output",ExpressionUUID->"97660720-f258-43a0-ae7f-317b7a7b8a6a"]
+Cell[17487, 346, 845, 17, 105, "Input",ExpressionUUID->"abc99907-49d5-4596-946b-34a4ceb89c3c"],
+Cell[18335, 365, 632, 12, 32, "Output",ExpressionUUID->"61d4cb59-652a-46f2-9fb8-5c078eda0cff"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[33531, 666, 224, 3, 28, "Input",ExpressionUUID->"6e4ad93f-42cc-470e-9b28-fed27aa73045"],
-Cell[33758, 671, 179, 2, 32, "Output",ExpressionUUID->"01a6f008-654e-49fb-9d19-50cb9e45a2eb"]
+Cell[19004, 382, 224, 3, 28, "Input",ExpressionUUID->"c0206d51-ed30-4a0e-9484-273963b0b601"],
+Cell[19231, 387, 656, 13, 40, "Message",ExpressionUUID->"38b1402e-fed5-426b-820d-e8fb68bb8e4a"],
+Cell[19890, 402, 154, 2, 32, "Output",ExpressionUUID->"8a8bf1d9-114f-46ce-a745-2792f44e73fe"]
 }, Open  ]],
+Cell[20059, 407, 161, 3, 34, "Text",ExpressionUUID->"9cda0e66-61be-45ed-8c1b-259daf4f0b37"],
 Cell[CellGroupData[{
-Cell[33974, 678, 173, 2, 28, "Input",ExpressionUUID->"f834302b-f10d-4dd3-849a-3b5f257eeb4b"],
-Cell[34150, 682, 152, 2, 32, "Output",ExpressionUUID->"5f602395-f44c-419d-8ae5-076f377cb69b"]
-}, Open  ]],
-Cell[34317, 687, 291, 4, 28, "Input",ExpressionUUID->"fb75291c-a2d9-48bb-9b53-5f6c6174923a"],
-Cell[34611, 693, 299, 4, 34, "Text",ExpressionUUID->"c4e46aae-b9da-4740-b3d4-d971b591423b"],
-Cell[34913, 699, 927, 21, 67, "Input",ExpressionUUID->"a8b3504e-f0a7-44bb-8072-812a8c2297a0"],
-Cell[35843, 722, 161, 3, 34, "Text",ExpressionUUID->"9cda0e66-61be-45ed-8c1b-259daf4f0b37"],
-Cell[36007, 727, 221, 3, 28, "Input",ExpressionUUID->"fc74a0ea-5f7e-45a2-89cb-f9fbabe2f70f"]
+Cell[20245, 414, 220, 3, 28, "Input",ExpressionUUID->"fc74a0ea-5f7e-45a2-89cb-f9fbabe2f70f"],
+Cell[20468, 419, 630, 12, 56, "Message",ExpressionUUID->"a06e318d-8c30-44f9-bb5f-2d64d94bf321"],
+Cell[21101, 433, 156, 2, 32, "Output",ExpressionUUID->"419114e6-a413-4534-8196-416a3802423e"]
+}, Open  ]]
 }, Open  ]]
 }
 ]
