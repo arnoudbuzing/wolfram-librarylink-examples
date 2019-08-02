@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     23191,        479]
-NotebookOptionsPosition[     21285,        439]
-NotebookOutlinePosition[     21628,        454]
-CellTagsIndexPosition[     21585,        451]
+NotebookDataLength[     21138,        429]
+NotebookOptionsPosition[     19681,        397]
+NotebookOutlinePosition[     20024,        412]
+CellTagsIndexPosition[     19981,        409]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -64,8 +64,8 @@ IntermediateExamples\\\\Asynchronous\\\\AsynchronousReals\\\\build\\\\Debug\\\
    3.7395390839114923`*^9, 3.7403233775569077`*^9, 3.7403235103433733`*^9, 
    3.740323762648711*^9, 3.7403244974945*^9, 3.740324970320711*^9, 
    3.740325330865265*^9, 3.740326020045782*^9, 3.740330479889556*^9, 
-   3.740330839326435*^9, 3.740331476164441*^9},
- CellLabel->"Out[1]=",ExpressionUUID->"e2d76249-26a7-49ea-a69d-125b92ad303f"]
+   3.740330839326435*^9, 3.740331476164441*^9, 3.740405509721121*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"4e9dd2a9-f233-49c6-8ec8-a580df88e4d4"]
 }, Open  ]],
 
 Cell["Load the library:", "Text",
@@ -338,8 +338,8 @@ Asynchronous\\AsynchronousReals\\build\\Debug\\AsynchronousReals.dll",
    3.740323456679467*^9, 3.740323511672305*^9, 3.7403237645736113`*^9, 
    3.740324498862954*^9, 3.74032497259739*^9, 3.740325338774782*^9, 
    3.740326021986639*^9, 3.740330488191165*^9, 3.740330841546606*^9, 
-   3.7403314781975107`*^9},
- CellLabel->"Out[2]=",ExpressionUUID->"2c7fad70-0610-4060-8b67-9eb4f35007f9"]
+   3.7403314781975107`*^9, 3.740405512191987*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"34d39c96-b461-499b-8a73-9868f9df5798"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -366,75 +366,33 @@ Cell[BoxData[
 Cell[BoxData[
  InterpretationBox[
   RowBox[{
-  "AsynchronousTaskObject", "[", "\<\"background_task\"\>", ",", "1", ",", 
+  "AsynchronousTaskObject", "[", "\<\"background_task\"\>", ",", "2", ",", 
    RowBox[{" ", "<>"}], "]"}],
   AsynchronousTaskObject[
-  "background_task", 1, 20317217081703952877]]], "Output",
+  "background_task", 2, 20317702316841956885]]], "Output",
  CellChangeTimes->{
   3.7403245215143237`*^9, 3.7403249786659956`*^9, 3.740325363813134*^9, 
    3.7403254116427712`*^9, 3.7403254513211308`*^9, {3.7403260322538023`*^9, 
    3.7403260460401745`*^9}, 3.74033048869462*^9, {3.7403308487839994`*^9, 
-   3.7403308751036377`*^9}, 3.740331303380407*^9, 3.740331506103569*^9},
- CellLabel->"Out[3]=",ExpressionUUID->"61d4cb59-652a-46f2-9fb8-5c078eda0cff"]
+   3.7403308751036377`*^9}, 3.740331303380407*^9, 3.740331506103569*^9, 
+   3.7404055136642413`*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"f73c2fbd-6dbd-4c80-8aee-50394726956f"]
 }, Open  ]],
-
-Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"RemoveAsynchronousTask", "[", "task", "]"}]], "Input",
  CellChangeTimes->{{3.7403308604489355`*^9, 3.740330865654294*^9}},
- CellLabel->"In[7]:=",ExpressionUUID->"c0206d51-ed30-4a0e-9484-273963b0b601"],
-
-Cell[BoxData[
- TemplateBox[{
-  "RemoveAsynchronousTask","asyncobj",
-   "\"Asynchronous task object \
-\\!\\(\\*InterpretationBox[RowBox[{\\\"AsynchronousTaskObject\\\", \\\"[\\\", \
-\\\"\\\\\\\"background_task\\\\\\\"\\\", \\\",\\\", \\\"1\\\", \\\",\\\", \
-\\\" <>\\\", \\\"]\\\"}], AsynchronousTaskObject[\\\"background_task\\\", 1, \
-20317217081703952877]]\\) has an invalid identification number. It may have \
-been removed.\"",2,7,1,20317217081703952877,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.7403323935186605`*^9},
- CellLabel->
-  "During evaluation of \
-In[7]:=",ExpressionUUID->"38b1402e-fed5-426b-820d-e8fb68bb8e4a"],
-
-Cell[BoxData["$Failed"], "Output",
- CellChangeTimes->{3.740332393522164*^9},
- CellLabel->"Out[7]=",ExpressionUUID->"8a8bf1d9-114f-46ce-a745-2792f44e73fe"]
-}, Open  ]],
+ CellLabel->"In[4]:=",ExpressionUUID->"c0206d51-ed30-4a0e-9484-273963b0b601"],
 
 Cell["Unload the library:", "Text",
  CellChangeTimes->{{3.739124382953955*^9, 
   3.739124385889764*^9}},ExpressionUUID->"9cda0e66-61be-45ed-8c1b-\
 259daf4f0b37"],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[
  RowBox[{"LibraryUnload", "[", "library", "]"}]], "Input",
  CellChangeTimes->{{3.7391243720599732`*^9, 3.7391243780989137`*^9}},
- CellLabel->"In[8]:=",ExpressionUUID->"fc74a0ea-5f7e-45a2-89cb-f9fbabe2f70f"],
-
-Cell[BoxData[
- TemplateBox[{
-  "LibraryFunction","unloadlib",
-   "\"The library \\!\\(\\*RowBox[{\\\"\\\\\\\"D:\\\\\\\\\\\\\\\\github\\\\\\\
-\\\\\\\\\\wolfram-librarylink-examples\\\\\\\\\\\\\\\\02-IntermediateExamples\
-\\\\\\\\\\\\\\\\Asynchronous\\\\\\\\\\\\\\\\AsynchronousReals\\\\\\\\\\\\\\\\\
-build\\\\\\\\\\\\\\\\Debug\\\\\\\\\\\\\\\\AsynchronousReals.dll\\\\\\\"\\\"}]\
-\\) cannot be unloaded.\"",2,8,2,20317217081703952877,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.7403323951733637`*^9},
- CellLabel->
-  "During evaluation of \
-In[8]:=",ExpressionUUID->"a06e318d-8c30-44f9-bb5f-2d64d94bf321"],
-
-Cell[BoxData["$Failed"], "Output",
- CellChangeTimes->{3.7403323951763673`*^9},
- CellLabel->"Out[8]=",ExpressionUUID->"419114e6-a413-4534-8196-416a3802423e"]
-}, Open  ]]
+ CellLabel->"In[5]:=",ExpressionUUID->"fc74a0ea-5f7e-45a2-89cb-f9fbabe2f70f"]
 }, Open  ]]
 },
 WindowSize->{759, 833},
@@ -458,28 +416,20 @@ Cell[580, 22, 408, 6, 96, "Title",ExpressionUUID->"1297967f-cb5a-4edf-9d0c-e27dd
 Cell[991, 30, 161, 3, 34, "Text",ExpressionUUID->"c510ce96-e2d9-423d-b2ed-552735483f57"],
 Cell[CellGroupData[{
 Cell[1177, 37, 759, 14, 28, "Input",ExpressionUUID->"8aa2e240-abfa-44b5-894b-46319c343446"],
-Cell[1939, 53, 994, 14, 52, "Output",ExpressionUUID->"e2d76249-26a7-49ea-a69d-125b92ad303f"]
+Cell[1939, 53, 1016, 14, 52, "Output",ExpressionUUID->"4e9dd2a9-f233-49c6-8ec8-a580df88e4d4"]
 }, Open  ]],
-Cell[2948, 70, 163, 3, 34, "Text",ExpressionUUID->"efac2de3-09b8-4860-b07a-129a8fab3591"],
+Cell[2970, 70, 163, 3, 34, "Text",ExpressionUUID->"efac2de3-09b8-4860-b07a-129a8fab3591"],
 Cell[CellGroupData[{
-Cell[3136, 77, 904, 15, 48, "Input",ExpressionUUID->"62a67b0b-d18f-44ae-9b33-57e569a713df"],
-Cell[4043, 94, 13407, 247, 71, "Output",ExpressionUUID->"2c7fad70-0610-4060-8b67-9eb4f35007f9"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[17487, 346, 845, 17, 105, "Input",ExpressionUUID->"abc99907-49d5-4596-946b-34a4ceb89c3c"],
-Cell[18335, 365, 632, 12, 32, "Output",ExpressionUUID->"61d4cb59-652a-46f2-9fb8-5c078eda0cff"]
+Cell[3158, 77, 904, 15, 48, "Input",ExpressionUUID->"62a67b0b-d18f-44ae-9b33-57e569a713df"],
+Cell[4065, 94, 13429, 247, 71, "Output",ExpressionUUID->"34d39c96-b461-499b-8a73-9868f9df5798"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[19004, 382, 224, 3, 28, "Input",ExpressionUUID->"c0206d51-ed30-4a0e-9484-273963b0b601"],
-Cell[19231, 387, 656, 13, 40, "Message",ExpressionUUID->"38b1402e-fed5-426b-820d-e8fb68bb8e4a"],
-Cell[19890, 402, 154, 2, 32, "Output",ExpressionUUID->"8a8bf1d9-114f-46ce-a745-2792f44e73fe"]
+Cell[17531, 346, 845, 17, 105, "Input",ExpressionUUID->"abc99907-49d5-4596-946b-34a4ceb89c3c"],
+Cell[18379, 365, 660, 13, 32, "Output",ExpressionUUID->"f73c2fbd-6dbd-4c80-8aee-50394726956f"]
 }, Open  ]],
-Cell[20059, 407, 161, 3, 34, "Text",ExpressionUUID->"9cda0e66-61be-45ed-8c1b-259daf4f0b37"],
-Cell[CellGroupData[{
-Cell[20245, 414, 220, 3, 28, "Input",ExpressionUUID->"fc74a0ea-5f7e-45a2-89cb-f9fbabe2f70f"],
-Cell[20468, 419, 630, 12, 56, "Message",ExpressionUUID->"a06e318d-8c30-44f9-bb5f-2d64d94bf321"],
-Cell[21101, 433, 156, 2, 32, "Output",ExpressionUUID->"419114e6-a413-4534-8196-416a3802423e"]
-}, Open  ]]
+Cell[19054, 381, 224, 3, 28, "Input",ExpressionUUID->"c0206d51-ed30-4a0e-9484-273963b0b601"],
+Cell[19281, 386, 161, 3, 34, "Text",ExpressionUUID->"9cda0e66-61be-45ed-8c1b-259daf4f0b37"],
+Cell[19445, 391, 220, 3, 28, "Input",ExpressionUUID->"fc74a0ea-5f7e-45a2-89cb-f9fbabe2f70f"]
 }, Open  ]]
 }
 ]
