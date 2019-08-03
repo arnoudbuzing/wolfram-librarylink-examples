@@ -1,5 +1,4 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include <cstdlib>
 #include "WolframLibrary.h"
 
 EXTERN_C DLLEXPORT mint WolframLibrary_getVersion( ) { return WolframLibraryVersion; }
@@ -19,10 +18,8 @@ EXTERN_C DLLEXPORT int wolfram_strtol(WolframLibraryData libData, mint Argc, MAr
 
 EXTERN_C DLLEXPORT int wolfram_strtod(WolframLibraryData libData, mint Argc, MArgument *Args, MArgument Res) {
   char *string;
-  mint base;
   mreal result;
   string = MArgument_getUTF8String(Args[0]);
-  base = MArgument_getInteger(Args[1]);
   result = strtod(string, NULL);
   MArgument_setReal(Res,result);
   return LIBRARY_NO_ERROR;
