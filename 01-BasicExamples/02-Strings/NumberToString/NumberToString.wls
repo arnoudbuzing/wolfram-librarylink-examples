@@ -6,6 +6,6 @@ Needs["CCompilerDriver`"];
 lib = CreateLibrary[{name<>".cpp"},name];
 Print[lib];
 dtoa = LibraryFunctionLoad[lib,"wolfram_dtoa",{Real},"UTF8String"];
-Print[ "Answer: ", dtoa[2.332] ];
+Print[ "Answer: ", dtoa[2.34*^100] ];
 LibraryUnload[lib];
 DeleteFile[lib];
